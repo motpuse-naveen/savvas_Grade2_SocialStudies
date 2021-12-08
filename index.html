@@ -1,5 +1,1512 @@
-<!DOCTYPE html>
-<html>
-    <head></head>
-    <body></body>
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Grade 2 - Social Studies – Making, Buying, and Selling Things</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <!--<link rel="stylesheet" href="assets/jslib/jquery_ui_1.12.1/jquery_ui_1.12.1.min.css">-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/fonts-new.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/device.css">
+    <script src="assets/json/main.json"></script>
+    <script src="assets/jslib/jquery_3.1.1/jquery_3.1.1.min.js"></script>
+    <script src="assets/jslib/jquery_ui_1.12.1/jquery_ui_1.12.1.js"></script>
+    <script src="assets/jslib/jquery-ui-touch/jquery.ui.touch.js"></script>
+</head>
+
+<body class="black">
+    <div class="container-fs bb fixed-head-bar annimmenu">
+        <div class="container-mxw">
+            <nav class="topMenuBar2">
+                <ul class="menu d-flex">
+                    <li class="flex-fill">
+                        <a href="#" id="tablinkfirst" class="link-tab active" data-tabid="slide-before-reading"
+                            slideNumber="1" role="tab" aria-selected="true" aria-controls="slide-before-reading">Get Started</a>
+                    </li>
+                    <li class="flex-fill">
+                        <a href="#" id="tablinktext1" class="link-tab inactive" data-tabid="slide-text1" slideNumber="2"
+                            role="tab" aria-selected="false" aria-controls="slide-text1">Text 1</a>
+                    </li>
+                    <li class="flex-fill">
+                        <a href="#" id="tablinktext2" class="link-tab inactive" data-tabid="slide-text2" slideNumber="3"
+                            role="tab" aria-selected="false" aria-controls="slide-text2">Text 2</a>
+                    </li>
+                    <li class="flex-fill">
+                        <a href="#" id="tablinktext3" class="link-tab inactive" data-tabid="slide-text3" slideNumber="4"
+                            role="tab" aria-selected="false" aria-controls="slide-text3">Text 3</a>
+                    </li>
+                    <li class="flex-fill">
+                        <a href="#" id="tablinktext4" class="link-tab inactive" data-tabid="slide-text4" slideNumber="5"
+                            role="tab" aria-selected="false" aria-controls="slide-text4">Text 4</a>
+                    </li>
+                    <li class="flex-fill">
+                        <a href="#" id="tablinktext5" class="link-tab inactive" data-tabid="slide-text5" slideNumber="6"
+                            role="tab" aria-selected="false" aria-controls="slide-text5">Text 5</a>
+                    </li>
+                    <li class="flex-fill">
+                        <a href="#" id="tablinklast" class="link-tab inactive" data-tabid="slide-after-reading"
+                            slideNumber="7" role="tab" aria-selected="false" aria-controls="slide-after-reading">Wrap It
+                            Up</a>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="top-mobile-menu-button homescreen">
+                <button id="mobileMenuButton" role="button" aria-expanded="false"></button>
+                <div class="nav-title disnone">
+                    <h1>About The Book</h1>
+                </div>
+                <div class="mobile-menu disnone" aria-hidden="true">
+                    <div class="mobile-menu-overlay"></div>
+                    <div class="mobile-menu-wrap">
+                        <div class="mobile-menu-container">
+                            <ul class="top-menu">
+                                <li class="top-menu-item">
+                                    <a href="#" id="tablinkfirst" class="link-tab active"
+                                        data-tabid="slide-before-reading" slideNumber="1" role="tab"
+                                        aria-selected="true" aria-controls="slide-before-reading">Get
+                                        Started</a>
+                                </li>
+                                <li aria-hidden="true" class="top-menu-item-sep">
+                                    <hr>
+                                </li>
+                                <li class="top-menu-item">
+                                    <a href="#" id="tablinktext1" class="link-tab inactive" data-tabid="slide-text1"
+                                        slideNumber="2" role="tab" aria-selected="false"
+                                        aria-controls="slide-text1">Text 1</a>
+                                </li>
+                                <li aria-hidden="true" class="top-menu-item-sep">
+                                    <hr>
+                                </li>
+                                <li class="top-menu-item">
+                                    <a href="#" id="tablinktext2" class="link-tab inactive" data-tabid="slide-text2"
+                                        slideNumber="3" role="tab" aria-selected="false"
+                                        aria-controls="slide-text2">Text 2</a>
+                                </li>
+                                <li aria-hidden="true" class="top-menu-item-sep">
+                                    <hr>
+                                </li>
+                                <li class="top-menu-item">
+                                    <a href="#" id="tablinktext3" class="link-tab inactive" data-tabid="slide-text3"
+                                        slideNumber="4" role="tab" aria-selected="false"
+                                        aria-controls="slide-text3">Text 3</a>
+                                </li>
+                                <li aria-hidden="true" class="top-menu-item-sep">
+                                    <hr>
+                                </li>
+                                <li class="top-menu-item">
+                                    <a href="#" id="tablinktext4" class="link-tab inactive" data-tabid="slide-text4"
+                                        slideNumber="5" role="tab" aria-selected="false"
+                                        aria-controls="slide-text4">Text 4</a>
+                                </li>
+                                <li aria-hidden="true" class="top-menu-item-sep">
+                                    <hr>
+                                </li>
+                                <li class="top-menu-item">
+                                    <a href="#" id="tablinktext5" class="link-tab inactive" data-tabid="slide-text5"
+                                        slideNumber="6" role="tab" aria-selected="false"
+                                        aria-controls="slide-text5">Text 5</a>
+                                </li>
+                                <li aria-hidden="true" class="top-menu-item-sep">
+                                    <hr>
+                                </li>
+                                <li class="top-menu-item">
+                                    <a href="#" id="tablinklast" class="link-tab inactive"
+                                        data-tabid="slide-after-reading" slideNumber="7" role="tab"
+                                        aria-selected="false" aria-controls="slide-after-reading">Wrap It
+                                        Up</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div id="slide-before-reading" class="container-fs slide slide-before-reading active annim-fade white-bg">
+        <div class="banner-bg"></div>
+        <div class="container-mxw">
+            <div class="left-side-bar annim2">
+                <div class="side-nav">
+                    <div class="side-nav-circle"></div>
+                    <nav>
+                        <ul role="menu">
+                            <li role="none"><a role="menuitem" refid="scrollTop_s1_1" href="#scrollTop_s1_1">In This
+                                    Text Set</a></li>
+                            <li role="none"><a role="menuitem" refid="scrollTop_s1_2" href="#scrollTop_s1_2">Standards
+                                    and Objectives</a></li>
+                            <li role="none"><a role="menuitem" refid="scrollTop_s1_3" href="#scrollTop_s1_3">Big
+                                    Question</a></li>
+                            <li role="none"><a role="menuitem" refid="scrollTop_s1_4" href="#scrollTop_s1_4">Hooks</a>
+                            </li>
+                            <li role="none"><a role="menuitem" refid="scrollTop_s1_5" href="#scrollTop_s1_5">Discuss the
+                                    Big Question</a></li>
+                            <li role="none"><a role="menuitem" refid="scrollTop_s1_6" href="#scrollTop_s1_6">Vocabulary
+                                    Across Texts</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="content-panel">
+                <div class="title-wrap annim1">
+                    <h1 class="title">Grade 2 - Social Studies – Making, Buying, and Selling Things</h1>
+                </div>
+                <div class="card-wrap-container">
+                    <button id="buttonCarouselPrev"></button>
+                    <div class="card-wrap row">
+                        <div class="col">
+                            <div tabindex="0" role="button" aria-expanded="false" class="card card-button annim4-1">
+                                <div class="card-cover-img img1 annim4-11">
+                                    <!-- <span class="imageText">Text 1<br><span class="card-text">Anchor Text</span></span> -->
+                                    <div id="card-back-In-the-Sky" class="card-back">
+                                        <p class="bold">How Does Clothing Get to the Store?</p><br>
+                                        <p class="normal">
+                                            <span>by Adam Vincent</span><br>
+                                            <span class="bold">Word Count: </span><span>598</span><br>
+                                            <span class="bold">Lexile: </span><span>620</span>
+                                        </p>
+                                        <p class="normal">
+                                            <span class="bold">Text Structure: </span><br>
+                                            <span>sequential</span>
+                                        </p>
+                                        <p class="normal">
+                                            This informational text explains the step-by-step process of making a shirt, from its initial design to selling it in stores.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="card-body card-body-thumb annim4-111">
+                                    <a href="#" data-tablinkid="tablinktext1" class="card-link card-text">How Does Clothing Get to the Store?</a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div tabindex="0" role="button" aria-expanded="false" class="card card-button annim4-2">
+                                <div class="card-cover-img img2 annim4-22">
+                                    <!-- <span class="imageText">Text 2</span> -->
+                                    <div id="card-back-Star-Pictures" class="card-back">
+                                        <p class="bold">Make a Lemonade Stand</p>
+                                        <p class="normal">
+                                            <span>by Anton Carpio</span><br>
+                                            <span class="bold">Word Count:</span><span>330</span><br>
+                                            <span class="bold">Lexile:</span><span>500</span>
+                                        </p>
+                                        <p class="normal">
+                                            <span class="bold">Text Structure: </span><br>
+                                            <span>sequential</span>
+                                        </p>
+                                        <p class="normal">
+                                            This informational text explains the steps a student could take to start a lemonade stand.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="card-body card-body-thumb annim4-222">
+                                    <a href="#" data-tablinkid="tablinktext2" class="card-link card-text">Make a Lemonade Stand</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div tabindex="0" role="button" aria-expanded="false" class="card card-button annim4-3">
+                                <div class="card-cover-img img3 annim4-33">
+                                    <!-- <span class="imageText">Text 3<br><span class="card-text">Video</span></span> -->
+                                    <div id="card-back-Observing-Moon-Phases" class="card-back">
+                                        <p class="bold">Which Bike Would You Pick?</p>
+                                        <p class="normal">
+                                            <span>by Kim Haynes</span><br>
+                                            <span class="bold">Word Count:</span><span>226</span><br>
+                                            <span class="bold">Lexile:</span><span>500</span>
+                                        </p>
+                                        <p class="normal">
+                                            <span class="bold">Text Structure: </span><br>
+                                            <span>Chronological</span>
+                                        </p>
+                                        <p class="normal">
+                                            This informational text discusses why different types of bikes have different prices.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="card-body card-body-thumb annim4-333">
+                                    <a href="#" data-tablinkid="tablinktext3" class="card-link card-text">Which Bike Would You Pick?</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div tabindex="0" role="button" aria-expanded="false" class="card card-button annim4-4">
+                                <div class="card-cover-img img4 annim4-44">
+                                    <!-- <span class="imageText">Text 4</span> -->
+                                    <div id="card-back-Name-the-Full-Moons" class="card-back">
+                                        <p class="bold">Video: Farmer’s Market: Meet Me at Third and Fairfax</p>
+                                        <!-- <p class="normal">
+                                            <span class="bold">Length: </span><span>3 minutes</span>
+                                        </p> -->
+                                        <p class="normal">
+                                            <span class="bold">Text Structure: </span><br>
+                                            <span>chronological</span>
+                                        </p>
+                                        <p class="normal">
+                                            This video recounts a boy’s visit to a farmer’s market in Los Angeles.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="card-body card-body-thumb annim4-444">
+                                    <a href="#" data-tablinkid="tablinktext4" class="card-link card-text">Video: Farmer’s Market: Meet Me at Third and Fairfax</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div tabindex="0" role="button" aria-expanded="false" class="card card-button annim4-5">
+                                <div class="card-cover-img img5 annim4-55">
+                                    <!-- <span class="imageText">Text 5</span> -->
+                                    <div id="card-back-Through-a-Telescope" class="card-back">
+                                        <p class="bold">Shops and Markets Around the World</p>
+                                        <p class="normal">
+                                            <span>by Sloane Jackson</span><br>
+                                            <span class="bold">Word Count: </span><span>400</span><br>
+                                            <span class="bold">Lexile: </span><span>570</span>
+                                        </p>
+                                        <p class="normal">
+                                            <span class="bold">Text Structure: </span><br>
+                                            <span>compare/contrast</span>
+                                        </p>
+                                        <p class="normal">
+                                            This collection of photos shows shops and markets for different products all over the world.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="card-body card-body-thumb annim4-555">
+                                    <a href="#" data-tablinkid="tablinktext5" class="card-link card-text">Shops and Markets Around the World</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button id="buttonCarouselNext"></button>
+
+                </div>
+                <div class="CarouselDots" aria-hidden="true">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+                <div class="text-content annim3">
+                    <h2 id="scrollTop_s1_1">In This Text Set</h2>
+                    <p>This text set includes three informational texts, a video, and a collection of photos. All deal with aspects of making, buying, or selling products.</p>
+                    <p><i><span class="bold">How Does Clothing Get to the Store?</span></i> is the anchor text for this set. Depending on the needs of your class, you may choose to assign <i><span class="bold">How Does Clothing Get to the Store?</span></i> for independent reading, or you may choose to read it aloud with the class. Beginning with the anchor text will ground students in concepts and academic vocabulary that are key to discussing the Big Question. As students read the other texts in the set, they will compare their new understandings, as well as the structure and features of the text, with the anchor text.</p>
+                    <p>After students read the anchor text, you may choose to assign specific texts or encourage students to choose the texts that appeal to them the most. Use the chart below to see where specific text features, text structures, and content topics appear across the texts in this set.</p>
+                    <div class="table-content-scroller">
+                        <table class="table-style1" style="min-width: 100%;">
+                            <thead>
+                                <tr>
+                                    <th>Grade 2 Social Studies: Making, Buying, and Selling Things</th>
+                                    <th>How Does Clothing Get to the Store?</th>
+                                    <th>Make a Lemonade Stand</th>
+                                    <th>What Does a Bike Cost?</th>
+                                    <th>Video: Farmer’s Market: Meet Me at Third and Fairfax</th>
+                                    <th>Photos: Shops and Markets Around the World</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="trbg">
+                                    <th>Text Features</th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                </tr>
+                                <tr>
+                                    <td>Section Heads</td>
+                                    <td><span class="span-disc" aria-hidden="true"></span><span class="sr-only">bullet</span></td>
+                                    <td><span class="span-disc" aria-hidden="true"></span><span class="sr-only">bullet</span></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Captions</td>
+                                    <td><span class="span-disc" aria-hidden="true"></span><span class="sr-only">bullet</span></td>
+                                    <td></td>
+                                    <td><span class="span-disc" aria-hidden="true"></span><span class="sr-only">bullet</span></td>
+                                    <td></td>
+                                    <td><span class="span-disc" aria-hidden="true"></span><span class="sr-only">bullet</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Photographs</td>
+                                    <td><span class="span-disc" aria-hidden="true"></span><span class="sr-only">bullet</span></td>
+                                    <td><span class="span-disc" aria-hidden="true"></span><span class="sr-only">bullet</span></td>
+                                    <td><span class="span-disc" aria-hidden="true"></span><span class="sr-only">bullet</span></td>
+                                    <td></td>
+                                    <td><span class="span-disc" aria-hidden="true"></span><span class="sr-only">bullet</span></td>
+                                </tr>
+                                <tr class="trbg">
+                                    <th>Text Structures</th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                </tr>
+                                <tr>
+                                    <td>Procedural</td>
+                                    <td><span class="span-disc" aria-hidden="true"></span><span class="sr-only">bullet</span></td>
+                                    <td><span class="span-disc" aria-hidden="true"></span><span class="sr-only">bullet</span></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Compare and Contrast</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><span class="span-disc" aria-hidden="true"></span><span class="sr-only">bullet</span></td>
+                                    <td></td>
+                                    <td><span class="span-disc" aria-hidden="true"></span><span class="sr-only">bullet</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Chronological</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><span class="span-disc" aria-hidden="true"></span><span class="sr-only">bullet</span></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <h2 id="scrollTop_s1_2">Standards and Objectives</h2>
+                    <ul class="style-text">
+                        <li>
+                            <p><span class="bold">Social Studies Standard</span><br>D2.Eco.5.K-2. Identify prices of products in a local market.</p>
+                        </li>
+                        <li>
+                            <p><span class="bold">Informational Text Focus</span><br>In this text set, students will read informational texts to understand procedural, compare/contrast, and chronological text structures and text features such as photographs and captions help their understanding as they read.</p>
+                        </li>
+                        <li>
+                            <p><span class="bold">Content Objective</span><br>Students will understand how products are made, bought, and sold.</p>
+                        </li>
+                        <li>
+                            <p><span class="bold">Language Objective</span><br>Students will explain what affects an item’s price. </p>
+                        </li>
+                    </ul>
+
+                    <h2 id="scrollTop_s1_3">Big Question</h2>
+                    <p>Why do things cost what they do?</p>
+                    <h2 id="scrollTop_s1_4">Hooks</h2>
+                    <h3 class="blue-heading"><span class="playicon"><i class="fa fa-play"></i></span><a target="_blank" href="https://www.youtube.com/watch?v=w5KRawOXy4U">Toy Figurines | How It's Made</a></h3>
+                    <div class="blue-heading-pad">
+                        <p>
+                            <!-- <span aria-hidden="true">(from 0:00 to 1:14)</span><span class="sr-only">(from 0 colon 00 to 1 colon 14)</span><br> -->
+                            Share this video to introduce the many steps involved in making a product, from the original idea to the final touches.
+                        </p>
+                        <p class="blue-script"><i><span class="bold">Ask:</span> What do people need to make the toy? Are you surprised by how this toy is made?</i></p>
+                    </div>
+                    <h3 class="blue-heading"><span class="playicon"><i class="fa fa-eye"></i></span><a target="_blank" href="https://www.supermarketnews.com/sites/supermarketnews.com/files/wegmansproduce.jpg">Photo: Grocery Store</a></h3>
+                    <div class="blue-heading-pad">
+                        <p><i>Share this photo of products and prices to get students thinking about why things cost what they do.</i></p>
+                        <p class="blue-script"><i><span class="bold">Ask:</span> Look at the prices of the foods. Why do you think some foods cost more than others?</i></p>
+                    </div>
+                    <div class="side-disclamer">
+                        <p class="bold">Disclaimer</p>
+                        <p>By clicking the highlighted text, you will be leaving the Savvas NOW Program to enter into an
+                            external website that may contain content or... <a href="javascript:void(0);"
+                                class="link-learmore">Learn More</a></p>
+                    </div>
+                    <h2 id="scrollTop_s1_5">Discuss the Big Question</h2>
+                    <p>Have you ever saved up money to buy something? How much did it cost?</p>
+                    <p>Do you have a favorite toy or other thing that you own? How do you think it was made? What do you think it costs?</p>
+                    <p>When you visit a store, how can you find out what the products cost?</p>
+                    <p>Think of a store you visit. What do they sell? Where do you think the products come from?</p>
+                    <h2 id="scrollTop_s1_6">Vocabulary Across Texts</h2>
+                    <p>After being introduced to key vocabulary in the anchor text, students will encounter many of the same vocabulary words and language as they read other texts in the set, presented in new contexts, and with new opportunities to use those words in writing and conversation, helping them to expand their understanding. </p>
+                    <p>The chart below shows where the vocabulary appears throughout the text set.</p>
+                    <div class="table-content-scroller">
+                        <table class="table-style2">
+                            <thead>
+                                <tr>
+                                    <th>Content Vocabulary</th>
+                                    <th>How Does Clothing Get to the Store?</th>
+                                    <th>Making a Lemonade Stand</th>
+                                    <th>What Does a Bike Cost?</th>
+                                    <th>Farmer’s Market: Meet Me at Third and Fairfax</th>
+                                    <th>Shops and Markets Around the World</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>cost</td>
+                                    <td><span class="span-disc" aria-hidden="true"></span><span class="sr-only">bullet</span></td>
+                                    <td><span class="span-disc" aria-hidden="true"></span><span class="sr-only">bullet</span></td>
+                                    <td><span class="span-disc" aria-hidden="true"></span><span class="sr-only">bullet</span></td>
+                                    <td></td>
+                                    <td><span class="span-disc" aria-hidden="true"></span><span class="sr-only">bullet</span></td>
+                                </tr>
+                                <tr>
+                                    <td>customers</td>
+                                    <td><span class="span-disc" aria-hidden="true"></span><span class="sr-only">bullet</span></td>
+                                    <td><span class="span-disc" aria-hidden="true"></span><span class="sr-only">bullet</span></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><span class="span-disc" aria-hidden="true"></span><span class="sr-only">bullet</span></td>
+                                </tr>
+                                <tr>
+                                    <td>goods</td>
+                                    <td><span class="span-disc" aria-hidden="true"></span><span class="sr-only">bullet</span></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><span class="span-disc" aria-hidden="true"></span><span class="sr-only">bullet</span></td>
+                                </tr>
+                                <tr>
+                                    <td>market</td>
+                                    <td></td>
+                                    <td><span class="span-disc" aria-hidden="true"></span><span class="sr-only">bullet</span></td>
+                                    <td></td>
+                                    <td><span class="span-disc" aria-hidden="true"></span><span class="sr-only">bullet</span></td>
+                                    <td><span class="span-disc" aria-hidden="true"></span><span class="sr-only">bullet</span></td>
+                                </tr>
+                                <tr>
+                                    <td>price</td>
+                                    <td><span class="span-disc" aria-hidden="true"></span><span class="sr-only">bullet</span></td>
+                                    <td><span class="span-disc" aria-hidden="true"></span><span class="sr-only">bullet</span></td>
+                                    <td><span class="span-disc" aria-hidden="true"></span><span class="sr-only">bullet</span></td>
+                                    <td></td>
+                                    <td><span class="span-disc" aria-hidden="true"></span><span class="sr-only">bullet</span></td>
+                                </tr>
+                                <tr>
+                                    <td>product</td>
+                                    <td><span class="span-disc" aria-hidden="true"></span><span class="sr-only">bullet</span></td>
+                                    <td><span class="span-disc" aria-hidden="true"></span><span class="sr-only">bullet</span></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>needs</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><span class="span-disc" aria-hidden="true"></span><span class="sr-only">bullet</span></td>
+                                    <td><span class="span-disc" aria-hidden="true"></span><span class="sr-only">bullet</span></td>
+                                </tr>
+                                <tr>
+                                    <td>wants</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><span class="span-disc" aria-hidden="true"></span><span class="sr-only">bullet</span></td>
+                                    <td><span class="span-disc" aria-hidden="true"></span><span class="sr-only">bullet</span></td>
+                                </tr>
+                                <tr>
+                                    <td>merchant</td>
+                                    <td><span class="span-disc" aria-hidden="true"></span><span class="sr-only">bullet</span></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><span class="span-disc" aria-hidden="true"></span><span class="sr-only">bullet</span></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <p class="last-p">&nbsp;</p>
+                    <div class="table-content-scroller">
+                        <table class="table-style2">
+                            <thead>
+                                <tr>
+                                    <th>Academic Vocabulary</th>
+                                    <th>How Does Clothing Get to the Store?</th>
+                                    <th>Making a Lemonade Stand</th>
+                                    <th>What Does a Bike Cost?</th>
+                                    <th>Farmer’s Market: Meet Me at Third and Fairfax</th>
+                                    <th>Shops and Markets Around the World</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>design</td>
+                                    <td><span class="span-disc" aria-hidden="true"></span><span class="sr-only">bullet</span></td>
+                                    <td><span class="span-disc" aria-hidden="true"></span><span class="sr-only">bullet</span></td>
+                                    <td><span class="span-disc" aria-hidden="true"></span><span class="sr-only">bullet</span></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>display</td>
+                                    <td><span class="span-disc" aria-hidden="true"></span><span class="sr-only">bullet</span></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><span class="span-disc" aria-hidden="true"></span><span class="sr-only">bullet</span></td>
+                                    <td><span class="span-disc" aria-hidden="true"></span><span class="sr-only">bullet</span></td>
+                                </tr>
+                                <tr>
+                                    <td>persuade</td>
+                                    <td></td>
+                                    <td><span class="span-disc" aria-hidden="true"></span><span class="sr-only">bullet</span></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><span class="span-disc" aria-hidden="true"></span><span class="sr-only">bullet</span></td>
+                                </tr>
+                                <tr>
+                                    <td>produce</td>
+                                    <td><span class="span-disc" aria-hidden="true"></span><span class="sr-only">bullet</span></td>
+                                    <td></td>
+                                    <td><span class="span-disc" aria-hidden="true"></span><span class="sr-only">bullet</span></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <p class="last-p">&nbsp;</p>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <div id="slide-text1" class="container-fs slide slide-text1 inactive" aria-hidden="true">
+        <div class="banner-bg-small"></div>
+        <div class="container-mxw">
+            <div class="left-side-bar">
+                <div class="side-nav">
+                    <div class="side-nav-circle"></div>
+                    <nav>
+                        <ul role="menu">
+                            <li role="none"><a role="menuitem" refid="scrollTop_s2_1"
+                                    href="#scrollTop_s2_1">Instructional Focus</a></li>
+                            <li role="none"><a role="menuitem" refid="scrollTop_s2_2" href="#scrollTop_s2_2">Summary</a>
+                            </li>
+                            <li role="none"><a role="menuitem" refid="scrollTop_s2_3" href="#scrollTop_s2_3">Before
+                                    Reading</a></li>
+                            <li role="none"><a role="menuitem" refid="scrollTop_s2_4" href="#scrollTop_s2_4">During
+                                    Reading</a></li>
+                            <li role="none"><a role="menuitem" refid="scrollTop_s2_5" href="#scrollTop_s2_5">After
+                                    Reading</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="content-panel">
+                <div class="title-wrap">
+                    <h1 id="titleinthesky" class="title">Which Bike Would You PIck?</h1>
+                    <div class="title-bottom-text">
+                        by Kim Haynes <br>Informational Text - Word Count: 336 &nbsp; Lexile: 500
+                    </div>
+                </div>
+                <div class="text-content">
+                    <div class="gray-panel">
+                        <h2 id="scrollTop_s2_1">Instructional Focus</h2>
+                        <ul>
+                            <li>
+                                <p><span class="bold">Social Studies Standard</span> Identify prices of products in a local market.</p>
+                            </li>
+                            <li>
+                                <p><span class="bold">Content Objective:</span> Students will understand why products have different prices.</p>
+                            </li>
+                            <li>
+                                <p><span class="bold">Language Objective:</span> Students will describe features of a bike and explain their effects on the price.</p>
+                            </li>
+                            <li>
+                                <p><span class="bold">Text Structure Objective:</span> Students will understand how a compare and contrast structure shows how things are alike or different.</p>
+                            </li>
+                            <li>
+                                <p><span class="bold">Text Feature Objective:</span> Students will learn how section heads help them locate information in a text.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <h2 id="scrollTop_s2_2">Summary</h2>
+                    <p>This informational text explores different bikes, from a simple model to a more expensive electric bike. Photos and details compare the bikes’ features and prices so readers can decide which bike is best.</p>
+                    <h2 id="scrollTop_s2_3">Before Reading</h2>
+                    <p><span class="bold">Big Question:</span> Remind students of the Big Question: <i>Why do things cost what they do?</i> Ask: <span class="blue_scripting">How do you think <i>Which Bike Would You Pick</i>? will help you think about the Big Question?</span> Ask students what they think a bike might cost, and why.</p>
+                    <h3 class="normaltext"><span class="bold">Preview Vocabulary</span></h3>
+                    <p>Have students find and read sentences in the text that have the words <span class="bold"><i>cost, price, </i></span> and <span class="bold"><i>expensive.</i></span> Discuss the meaning of each word with the class. Ask: <span class="blue_scripting">If you see an ad for a toy, does it tell you the <span class="bold">price</span> ? Do you think a bike is <span class="bold">expensive</span> ? What do you think a bike would <span class="bold">cost</span> ?</span></p>
+
+                    <p><span class="bold">Oral Vocabulary</span> Some of the vocabulary in <i>Which Bike Would You Pick?</i> might be new or challenging for students. During class discussions, use these new terms repeatedly to help students become familiar with them. For example: <span class="blue_scripting">A <span class="bold">producer</span> producer is a person or company that makes something, such as a bike. What is an example of a producer? How might a person <span class="bold">design</span> a bike?</span></p>
+                    <h3 class="normaltext"><span class="bold">K-W-L CHART</span></h3>
+                    <p>Share a K-W-L graphic organizer. Explain that this organizer can help students to think about vocabulary words they already know, words they want to know, and words they learn about from the text. Help students practice using a word that they already know, such as cost. Say: <span class="blue_scripting">Do you already know the word cost? Where would you add that word? What about the word <i><span class="bold">produce?</span></i> If you are still learning that word, where would you add that word to the chart?</span></p>
+
+                    <p>[a three-column chart with columns labeled Know, Want, and Learn. List the following words in each column: <column 1: Know>cost, price<br> <column 2: Want> expensive<br> <column 3: Learn>produce, design]</p>
+                    <h2 id="scrollTop_s2_4">During Reading</h2>
+                    <h3 class="normaltext"><span class="bold">ELEMENTS OF INFORMATIONAL TEXT</span></h3>
+                    <p><span class="bold">Text Structure</span> Explain that this text has a compare and contrast structure. Say: <span class="blue_scripting">In this text, the writer explains how some things are alike and different.</span> Have students preview pages x-x of the text. Say: <span class="blue_scripting">Both of these photos show bikes. How are they alike? How are they different?</span></p>
+                    <p><span class="bold">Text Features</span> Direct students to p. x. Point out that some words are bigger and bolder than others. Say: <span class="blue_scripting">These big, bold words are headings. They tell what each part of the text is about.</span> Point to the heading “A Bike for Rocks and Trails.” Ask: <span class="blue_scripting">What would you expect to read about in this section?</span></p>
+                    <p><span class="bold">Track the Texts:</span> Have students use the <u><span class="bold">Making, Buying, and Selling Things: Track the Texts</span></u> graphic organizer. As they read, have them fill in the <i><span class="bold">Which Bike Should You Pick?</span></i> column with the name of the text structure, and any text features they noticed, including headings.</p>
+
+                    <h2 id="scrollTop_s2_5">After Reading</h2>
+                    <h3 class="normaltext"><span class="bold">Vocabulary</span></h3>
+                    <p>After students have read <i>Which Bike Should You Pick?,</i> have them review their completed K-W-L charts and share them with a partner. Ask: <span class="blue_scripting">Are there any more words that you would like to add?</span></p>
+                    <p>Display these images from <i>Which Bike Should You Pick?</i> to help students think about vocabulary words they may have learned from the text, such as <i>produce</i> and <i>cost</i>.</p>
+                    <p>[images from the book for each word for the teacher to project:]</p>
+                    <p>
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
+                            <div class="card b0">
+                                <div class="card-body img-card">
+                                    <img src="assets/images/screen_afterreading1.jpg">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
+                            <div class="card b0">
+                                <div class="card-body img-card">
+                                    <img src="assets/images/screen_afterreading2.jpg">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
+                            <div class="card b0">
+                                <div class="card-body img-card">
+                                    <img src="assets/images/screen_afterreading3.jpg">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </p>
+                    <h3 class="normaltext"><span class="bold">Discuss Across Texts</span></h3>
+                    <p>Encourage students to make connections between <i>Which Bike Should You Pick?</i> and other texts they have read on related subjects.</p>
+                    <ul class="small-bullet">
+                        <li><i>Which Bike Should You Pick?</i> explain what different bikes cost. What are some other facts about how much things cost?</li>
+                        <li>This text describes how people might make a decision about what to buy. What else have you read about buying something?</li>
+                        <li>Think back to what you learned about how much it costs to make a shirt in <i>How Does Clothing Get to the Store?</i> How does that relate to what you learned in <i>Which Bike Should You Pick?</i></li>
+                    </ul>
+                    <p><span class="bold">Track the Texts:</span> After the discussion, have students return to the <a href="javascript:void(0);">Making, Buying, and Selling Things: Track the Texts</a> graphic organizer. In the  <i><span class="bold">Which Bike Should You Pick?</span></i> column, have them fill in the <span class="bold">Big Ideas</span> row with something they learned about where prices come from.</p>
+                    <h3 class="normaltext"><span class="bold">Discuss The Big Question</span></h3>
+                    <p>Lead a class discussion around this text’s Big Question: <i>Why do things cost what they do?</i> As students share their ideas, draw out more information from them with follow-up questions such as, “Can you say more about that?” or “What are some examples of that?”</p>
+                    <ul class="small-bullet">
+                        <li>Why do some bikes cost more than others?</li>
+                        <li>Which of the bikes would you pick? Why would you choose it? How would the price help you make a decision?</li>
+                    </ul>
+                    <button class="blue-button mb20">Tips and Tools</button>
+                    <h3 class="normaltext"><span class="bold">Write About The Big Question</span></h3>
+                    <p>Have students design and draw a bike they would want, choosing parts or features based on the bikes in the text. Say: <span class="blue_scripting">Think about the parts of each bike you read about. Which parts would you want your bike to have?</span> Ask students to write two to three sentences describing their bike and telling how much they think the bike might cost.</p>
+                    <p class="last-p">&nbsp;</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="slide-text2" class="container-fs slide slide-text2 inactive" aria-hidden="true">
+        <div class="banner-bg-small"></div>
+        <div class="container-mxw">
+            <div class="left-side-bar">
+                <div class="side-nav">
+                    <div class="side-nav-circle"></div>
+                    <ul role="menu">
+                        <li role="none"><a role="menuitem" refid="scrollTop_s3_1" href="#scrollTop_s3_1">Instructional
+                                Focus</a></li>
+                        <li role="none"><a role="menuitem" refid="scrollTop_s3_2" href="#scrollTop_s3_2">Summary</a>
+                        </li>
+                        <li role="none"><a role="menuitem" refid="scrollTop_s3_3" href="#scrollTop_s3_3">Before
+                                Reading</a></li>
+                        <li role="none"><a role="menuitem" refid="scrollTop_s3_4" href="#scrollTop_s3_4">During
+                                Reading</a></li>
+                        <li role="none"><a role="menuitem" refid="scrollTop_s3_5" href="#scrollTop_s3_5">After
+                                Reading</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="content-panel">
+                <div class="title-wrap">
+                    <h1 class="title">Make a Lemonade Stand</h1>
+                    <div class="title-bottom-text">
+                        by Anton Carpio <br>Informational Text - Word Count: 300 &nbsp; Lexile: 500
+                    </div>
+                </div>
+                <div class="text-content">
+                    <h2 id="scrollTop_s3_1">Instructional Focus</h2>
+                    <ul>
+                        <li>
+                            <p><span class="bold">Social Studies Standard</span> Identify prices of products in a local market.</p>
+                        </li>
+                        <li>
+                            <p><span class="bold">Content Objective:</span> Students will understand the process of selling a product.</p>
+                        </li>
+                        <li>
+                            <p><span class="bold">Language Objective:</span> Students will describe steps in the process of making and selling lemonade.</p>
+                        </li>
+                        <li>
+                            <p><span class="bold">Text Structure Objective:</span> Students will understand how a procedural text structure can help readers learn how to complete a task.</p>
+                        </li>
+                        <li>
+                            <p><span class="bold">Text Feature Objective:</span> Students will understand how headings make it easier to locate information within a text.</p>
+                        </li>
+                    </ul>
+                    <h2 id="scrollTop_s3_2">Summary</h2>
+                    <p>Did you ever wonder how to start your own business? This text explains the steps for planning and running a lemonade stand.</p>
+                    <h2 id="scrollTop_s3_3">Before Reading</h2>
+                    <p><span class="bold">Big Question:</span> Remind students of the Big Question: <i>Why do things cost what they do?</i> Ask: <span class="blue_scripting">How do you think Make a Lemonade Stand will relate to the Big Question? This text is about opening your own business and selling a product. How do you think selling a product would help you understand what it costs?</span></p>
+
+                    <h3 class="normaltext"><span class="bold">Preview Vocabulary</span></h3>
+                    <p>Have students find and read sentences in the text that have the words <i><span class="bold">business, customers,</span></i> and <i><span class="bold">price.</span></i> Discuss the meaning of each word with the class. Ask: <span class="blue_scripting">Would you like to start your own <span class="bold">business</span>? If you go shopping with your family, are you <span class="bold">customers? Prices</span> tell what something costs. How do you find <span class="bold">prices</span> when you shop?</span></p>
+                    <p><span class="bold">Oral Vocabulary</span> Much of the vocabulary in <i>Make Your Own Lemonade Stand</i> might be familiar to most students, but other texts in this set include words that might be new or challenging. During class discussions, use these new terms repeatedly to help students become familiar with them. For example: <span class="blue_scripting">When you <span class="bold">design</span> something, you decide what it will look like. How would you <span class="bold">design</span> a lemonade stand?</span></p>
+                    <h3 class="normaltext"><span class="bold">K-W-L CHART</span></h3>
+                    <p>Share a Know-Want-Learn graphic organizer to help students think about words they already know, words they want to know more about, and words they learn as they read. Model adding a familiar word to the chart. Say: <span class="blue_scripting">Do you already know the word <i><span class="bold">price?</span></i> Let’s add that word under Know. What about the word <i><span class="bold">customer?</span></i> If you are still learning that word, where would you add it to the chart?</span> Guide students to add to the chart with other words related to starting a business or making a product. As they read, they can add new words under Learn. A completed K-W-L chart might look like this:</p>
+                    <p>[a three-column chart with columns labeled Know, Want, and Learn. List the following words in each column:<column 1: Know>price, sell, buy, work <column 2: Want> business, goods <column 3: Learn>customers]</p>
+
+                    <h2 id="scrollTop_s3_4">During Reading</h2>
+                    <h3 class="normaltext"><span class="bold">Elements Of Information Text</span></h3>
+                    <p><span class="bold">Text Structure</span> Tell students that this text uses a sequential structure. Say: <span class="blue_scripting">A sequential text tells what happens in a sequence or process. It explains what happens first, next, and last.</span> Have students read the title. Say: <span class="blue_scripting">What process do you think this text will describe? </span></p>
+                    <p>Display a T-chart graphic organizer. At the top of the left column, write “Sequential Structure.” Work with the class to fill in the column with what they know about this structure, and how it helps them understand the writer’s ideas. For example: “tells what happens in order”</p>
+                    <p><span class="bold">Text Features</span> Have students preview pages x-x in the text. Say: <span class="blue_scripting">Do you notice some words that are bigger and bolder than the others? Those are called headings. You can use headings to help you find information inside a text. The heading tells you about the information that comes after it.</span> Point to the bold heading <span class="bold">1. First, get some help.</span> Say: <span class="blue_scripting">It looks like this is the first step for making a lemonade stand. The text under this heading will explain how to get help.</span> Have students look ahead to page x of the text. Ask: <span class="blue_scripting">Which heading should I look under if I want to know how much my lemonade should cost?</span> (5. Decide on a price.)</p>
+                    <p>Return to the T-chart. At the top of the right column write “Headings.” Work with the class to fill in the column with examples of how headings help readers understand the text. For example: “help readers find information in a text”</p>
+                    <h2 id="scrollTop_s3_5">After Reading</h2>
+                    <h3 class="normaltext"><span class="bold">Vocabulary</span></h3>
+                    <p>After students have read <i>Make a Lemonade Stand,</i> have them review their completed K-W-L charts and compare their charts with a partner’s. Ask: <span class="blue_scripting">Are there any more words that you would like to add?</span></p>
+                    <p>Display these images from <i>Make a Lemonade Stand</i> to help students think about vocabulary words they may have learned from the text, such as <i>business, cost,</i> and <i>persuade</i>.</p>
+                    <p>[images from the book for each word for the teacher to project: business: SAL402608494.jpg (girl in front of lemonade stand) cost: SAL59436580.jpg (boy with jar of money) persuade: SAL607775.jpg (lemons with “fresh lemonade” sign]</p>
+                    <p>
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
+                            <div class="card b0">
+                                <div class="card-body img-card">
+                                    <img src="assets/images/screen_s2_afterreading1.jpg">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
+                            <div class="card b0">
+                                <div class="card-body img-card">
+                                    <img src="assets/images/screen_s2_afterreading2.jpg">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
+                            <div class="card b0">
+                                <div class="card-body img-card">
+                                    <img src="assets/images/screen_s2_afterreading3.jpg">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </p>
+                    <h3 class="normaltext"><span class="bold">Discuss Across Text</span></h3>
+                    <p>Encourage students to make connections between <i>Make a Lemonade Stand</i> and other texts they have read on related subjects.</p>
+                    <ul class="small-bullet">
+                        <li><i>Make a Lemonade Stand</i> explains how to start a business. What else have you read about kids who have their own business?</li>
+                        <li>This text tells how to make lemonade. What other texts describe how people make something? </li>
+                        <li>Think back to what you read in <i>How Does Clothing Get to the Store?</i> How is selling clothes like selling lemonade? How is it different?</li>
+                    </ul>
+                    <p><span class="bold">Track the Texts:</span> After the discussion, have students return to the <a href="javascript:void(0);">the Making, Buying, and Selling Things: Track the Texts</a> graphic organizer. Have them fill in the <i><span class="bold">Make a Lemonade Stand</span></i> row with something they learned about starting a business.</p>
+                    <h3 class="normaltext"><span class="bold">Discuss The Big Question</span></h3>
+                    <p>Lead a class discussion around this text’s Big Question:<i>Why do things cost what they do?</i> As students share their ideas, draw out more information from them with follow-up questions such as, “Can you say more about that?” or “What are some examples of that?”</p>
+                    <ul class="small-bullet">
+                        <li>Do you think 50 cents is a good price for lemonade? Why or why not?</li>
+                        <li>What would you need if you wanted to start a lemonade stand?</li>
+                        <li>What would you need to think about before deciding on a price?</li>
+                    </ul>
+                    <button class="blue-button mb20">Activity Support</button>
+                    <h3 class="normaltext"><span class="bold">Write About The Big Question</span></h3>
+                    <p>Have students create a comic strip about how to open a lemonade stand. The comic strip should include drawings and labels to describe some of the steps in the process. Remind students of steps they can include, such as buying ingredients, making the lemonade, and setting a price.</p>
+                    <p class="last-p">&nbsp;</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="slide-text3" class="container-fs slide slide-text3 inactive" aria-hidden="true">
+        <div class="banner-bg-small"></div>
+        <div class="container-mxw">
+            <div class="left-side-bar">
+                <div class="side-nav">
+                    <div class="side-nav-circle"></div>
+                    <nav>
+                        <ul role="menu">
+                            <li role="none"><a role="menuitem" refid="scrollTop_s4_1"
+                                    href="#scrollTop_s4_1">Instructional Focus</a></li>
+                            <li role="none"><a role="menuitem" refid="scrollTop_s4_2" href="#scrollTop_s4_2">Summary</a>
+                            </li>
+                            <li role="none"><a role="menuitem" refid="scrollTop_s4_3" href="#scrollTop_s4_3">Before Reading</a></li>
+                            <li role="none"><a role="menuitem" refid="scrollTop_s4_4" href="#scrollTop_s4_4">During Reading</a></li>
+                            <li role="none"><a role="menuitem" refid="scrollTop_s4_5" href="#scrollTop_s4_5">After Reading</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="content-panel">
+                <div class="title-wrap">
+                    <h1 class="title">Which Bike Would You Pick?</h1>
+                    <div class="title-bottom-text">
+                        by Kim Haynes<br>
+                        Informational Text - Word Count: 336 &nbsp; Lexile: 500
+                    </div>
+                </div>
+                <div class="text-content">
+                    <h2 id="scrollTop_s4_1">Instructional Focus</h2>
+                    <ul>
+                        <li>
+                            <p><span class="bold">Social Studies Standard</span> Identify prices of products in a local market.</p>
+                        </li>
+                        <li>
+                            <p><span class="bold">Content Objective:</span> Students will understand why products have different prices.</p>
+                        </li>
+                        <li>
+                            <p><span class="bold">Language Objective:</span> Students will describe features of a bike and explain their effects on the price.</p>
+                        </li>
+                        <li>
+                            <p><span class="bold">Text Structure Objective:</span> Students will understand how a compare and contrast structure shows how things are alike or different.</p>
+                        </li>
+                        <li>
+                            <p><span class="bold">Text Feature Objective:</span> Students will learn how section heads help them locate information in a text.</p>
+                        </li>
+                    </ul>
+                    <h2 id="scrollTop_s4_2">Summary</h2>
+                    <p>This informational text explores different bikes, from a simple model to a more expensive electric bike. Photos and details compare the bikes’ features and prices so readers can decide which bike is best.</p>
+                    <h2 id="scrollTop_s4_3">Before Reading</h2>
+                    <p><span class="bold">Big Question:</span> Remind students of the Big Question: <i>Why do things cost what they do?</i> Ask: <span class="blue_scripting">: How do you think Which Bike Would You Pick? will help you think about the Big Question?</span> Ask students what they think a bike might cost, and why.</p>
+
+                    <h3 class="normaltext"><span class="bold">Preview Vocabulary</span></h3>
+                    <p>Have students find and read sentences in the text that have the words <i><span class="bold">cost, price,</span></i> and <i><span class="bold">expensive.</span></i> Discuss the meaning of each word with the class. Ask: <span class="blue_scripting"> If you see an ad for a toy, does it tell you the <span class="bold">price</span>? Do you think a bike is <span class="bold">expensive</span>? What do you think a bike would <span class="bold">cost</span>?</span></p>
+                    <p><span class="bold">Oral Vocabulary</span> Some of the vocabulary in <i>Which Bike Would You Pick?</i> might be new or challenging for students.During class discussions, use these new terms repeatedly to help students become familiar with them. For example: <span class="blue_scripting">A <span class="bold">producer</span> is a person or company that makes something, such as a bike. What is an example of a producer? How might a person <span class="bold">design</span> a bike, or decide what it will look like?</span></p>
+                    <h3 class="normaltext"><span class="bold">K-W-L CHART</span></h3>
+                    <p>Share a K-W-L graphic organizer. Explain that this organizer can help students to think about vocabulary words they already know, words they want to know, and words they learn about from the text. Help students practice using a word that they already know, such as <i>cost.</i> Say: <span class="blue_scripting">Do you already know the word <i><span class="bold">cost?</span></i> Where would you add that word? What about the word <i><span>produce?</span></i> If you are still learning that word, where would you add that word to the chart?</span></p>
+                    <p>[a three-column chart with columns labeled Know, Want, and Learn. List the following words in each column: <column 1: Know>cost, price <column 2: Want> expensive <column 3: Learn>produce, design]</p>
+
+                    <h2 id="scrollTop_s4_4">During Reading</h2>
+                    <h3 class="normaltext"><span class="bold">Elements of Informational Text</span></h3>
+                    <p><span class="bold">Text Structure</span> Explain that this text has a compare-and-contrast structure. Say: <span class="blue_scripting">In this text, the writer explains how some things are alike and different.</span> Have students preview pages 4-5 of the text. Say: <span class="blue_scripting">Both of these photos show bikes. How are they alike? How are they different?</span></p>
+                    <p>Display a T-chart graphic organizer. At the top of the left column, write “Compare-and-Contrast Structure.” Work with the class to fill in the column with what they know about this structure, and how it helps them understand the writer’s ideas. For example: “explains how things are alike and different”</p>
+                    <p><span class="bold">Text Features</span> Direct students to p. 4. Point out that some words are bigger and bolder than others. Say: <span class="blue_scripting">These big, bold words are headings. They tell what each part of the text is about. </span>Point to the heading “A Bike for Rocks and Trails.” Ask: <span class="blue_scripting">What would you expect to read about in this section?</span></p>
+                    <p>Return to the T-chart. At the top of the right column write “Headings.” Work with the class to fill in the column with examples of how headings help readers understand the text. For example: “help readers find information in a text” and “tell what each part of the text is about”</p>
+
+                    <h2 id="scrollTop_s4_5">After Reading</h2>
+                    <h3 class="normaltext"><span class="bold">Vocabulary</span></h3>
+                    <p>After students have read <i>Which Bike Should You Pick?,</i> have them review their completed K-W-L charts and share them with a partner. Ask: <span class="blue_scripting">Are there any more words that you would like to add?</span></p>
+                    <p>Display these images from <i>Which Bike Should You Pick?</i> ? to help students think about vocabulary words they may have learned from the text, such as <i>design, produce,</i> and <i>cost.</i></p>
+                    <p>[images from the book for each word for the teacher to project: design: image of child on blue bike from screen 2 produce: image of mountain bike from screen 7 cost: close-up of bikes in bike shop from screen 3]</p>
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
+                            <div class="card b0">
+                                <div class="card-body img-card">
+                                    <img src="assets/images/screen_s2_afterreading1.jpg">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
+                            <div class="card b0">
+                                <div class="card-body img-card">
+                                    <img src="assets/images/screen_s3_afterreading2.jpg">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
+                            <div class="card b0">
+                                <div class="card-body img-card">
+                                    <img src="assets/images/screen_s3_afterreading3.jpg">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </p>
+                    <h3 class="normaltext"><span class="bold">Discuss Across Texts</span></h3>
+                    <p>Encourage students to make connections between <i>Which Bike Should You Pick?</i> and other texts they have read on related subjects.</p>
+                    <ul class="small-bullet">
+                        <li><i>Which Bike Should You Pick?</i> explain what different bikes cost. What are some other facts about how much things cost?</li>
+                        <li>This text describes how people might make a decision about what to buy. What else have you read about buying something?</li>
+                        <li>Think back to what you learned about how much it costs to make a shirt in <i>How Does Clothing Get to the Store?</i> How does that relate to what you learned in <i>Which Bike Should You Pick?</i></li>
+                    </ul>
+                    <p><span class="bold">Track the Texts:</span> After the discussion, have students return to the <a href="javascript:void(0);">Making, Buying, and Selling Things: Track the Texts</a> graphic organizer. In the <i><span class="bold">Which Bike Should You Pick?</span></i> column, have them fill in the <span class="bold">Big Ideas</span> row with something they learned about where prices come from.</p>
+                    <h3 class="normaltext"><span class="bold">Discuss The Big Question</span></h3>
+                    <p>Lead a class discussion around this text’s Big Question: <i>Why do things cost what they do?</i> As students share their ideas, draw out more information from them with follow-up questions such as, “Can you say more about that?” or “What are some examples of that?”</p>
+                    <ul class="small-bullet">
+                        <li>Why do some bikes cost more than others?</li>
+                        <li>Which of the bikes would you pick? Why would you choose it? How would the price help you make your decision?</li>
+                    </ul>
+                    <button class="blue-button mb20">Activity Support</button>
+                    <h3 class="normaltext"><span class="bold">Write About the Big Question</span></h3>
+                    <p>Have students design and draw a bike they would want, choosing parts or features based on the bikes in the text. Say: <span class="blue_scripting">Think about the parts of each bike you read about. Which parts would you want your bike to have?</span> Ask students to write two to three sentences describing their bike and telling how much they think the bike might cost.</p>
+                    <p class="last-p">&nbsp;</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="slide-text4" class="container-fs slide slide-text4 inactive" aria-hidden="true">
+        <div class="banner-bg-small"></div>
+        <div class="container-mxw">
+            <div class="left-side-bar">
+                <div class="side-nav">
+                    <div class="side-nav-circle"></div>
+                    <nav>
+                        <ul role="menu">
+                            <li role="none"><a role="menuitem" refid="scrollTop_s5_1"
+                                    href="#scrollTop_s5_1">Instructional Focus</a></li>
+                            <li role="none"><a role="menuitem" refid="scrollTop_s5_2" href="#scrollTop_s5_2">Summary</a>
+                            </li>
+                            <li role="none"><a role="menuitem" refid="scrollTop_s5_3" href="#scrollTop_s5_3">Before
+                                    Reading</a></li>
+                            <li role="none"><a role="menuitem" refid="scrollTop_s5_4" href="#scrollTop_s5_4">During
+                                    Reading</a></li>
+                            <li role="none"><a role="menuitem" refid="scrollTop_s5_5" href="#scrollTop_s5_5">After
+                                    Reading</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="content-panel">
+                <div class="title-wrap">
+                    <h1 class="title">Farmer’s Market: Meet Me at Third and Fairfax</h1>
+                    <div class="title-bottom-text">
+                        Word Count: N/A &nbsp; Lexile: N/A
+                    </div>
+                </div>
+                <div class="text-content">
+                    <div class="instructional-Panel">
+                        <div class="right-image-wrap">
+                            <figure class="right-image">
+                                <img src="assets/images/history_of_voting_rights.jpg" style="width:100%"
+                                    aria-hidden="true">
+                                <figcaption>
+                                    <a class="normlink" href="#" id="linkNameTheFullMoon">Farmer’s Market: Meet Me at Third and Fairfax</a>
+                                    <p><a href="https://us-school.pk12ls.com/school/5c8c7b71-360b-4c3c-b68d-e0a89e612c50/A0775694/player.html"
+                                            target="_blank" id="linkStudentTextPreview" class="graylink">Student Text
+                                            Preview</a>
+                                    </p>
+                                </figcaption>
+                            </figure>
+                        </div>
+
+                        <h2 id="scrollTop_s5_1">Instructional Focus</h2>
+                        <ul>
+                            <li>
+                                <p><span class="bold">Social Studies Standard</span> Identify prices of products in a local market.</p>
+                            </li>
+                            <li>
+                                <p><span class="bold">Content Objective</span> Students will understand how a farmer’s market is a different experience for both sellers and buyers.</p>
+                            </li>
+                            <li>
+                                <p><span class="bold">Language Objective</span> Students will describe the experience of shopping for goods at a farmer’s market.</p>
+                            </li>
+                            <li>
+                                <p><span class="bold">Text Structure Objective</span> Students will understand how a chronological structure shows events in the order in which they happened.</p>
+                            </li>
+                            <li>
+                                <p><span class="bold">Text Feature Objective</span> Students will understand how videos use images and narration to communicate information.</p>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <h2 id="scrollTop_s5_2">Summary</h2>
+                    <p>This video provides a guided tour of a farmer’s market, following a young boy who spends the day there.</p>
+                    <h2 id="scrollTop_s5_3">Before Reading</h2>
+                    <h3 class="normaltext mb2"><span class="bold uppercase">Big Question</span></h3>
+                    <p>Remind students of the Big Question: <i>Why do things cost what they do?</i> Ask: <span class="blue_scripting">How do you think <i>Farmers Market: Meet Me at Third and Fairfax</i> will help you think about the Big Question? Have you seen the prices at a farmers market? What might affect or change those prices?</span></p>
+
+                    <h3 class="normaltext"><span class="bold uppercase">Preview Vocabulary</span></h3>
+                    <p>Discuss the words <i>merchant, need,</i> and <i>want.</i> Ask: <span class="blue_scripting">What do <span class="bold">merchants</span> do at a market? When you go to a market, what are some things you can find that you <i>need</i>? What are some things that you <i>want</i>?</span></p>
+                    <h3 class="normaltext mb2"><span class="bold uppercase">Oral Vocabulary</span></h3>
+                    <p>Much of the vocabulary in <i>Farmers Market: Meet Me at Third and Fairfax</i> might be familiar to most students, but other texts in this set include words that might be new or challenging. During class discussions, use these new terms repeatedly to help students become familiar with them. For example: <span class="blue_scripting">A producer is someone who makes or grows something. Who are the producers of the products at a farmers market?</span></p>
+                    <h3 class="normaltext mb2"><span class="bold uppercase">K-W-L CHART</span></h3>
+                    <p>Share a K-W-L graphic organizer. Explain that this chart can help students to think about vocabulary words they already know, words they want to know, and words they have learned from this reading. Help students to practice using a word that your students will already know, such as <i>toy.</i> Say: <span class="blue_scripting">Do you already know the word <span class="bold">need</span>? Which column would you put that word in? What about the word <span class="bold">merchant</span>? If you are still learning that word, what column would you put that in?</span> Have students create their own KWL chart on a sheet of paper.</p>
+                    <p>[a three-column chart with columns labeled Know, Want, and Learn. List the following words in each column: <column 1: Know>need, want <column 2: Want> merchant <column 3: Learn>produce]</p>
+
+                    <div style="text-align: center;">
+                        <img src="assets/images/TextSets_WordCloud_Moon_Text4.svg" alt="Moon Word Web"
+                            style="width: 100%;max-width: 600px;">
+                    </div>
+
+                    <h2 id="scrollTop_s5_4">During Reading</h2>
+                    <h3 class="normaltext mb2"><span class="bold uppercase">Elements of Informational Text</span></h3>
+                    <p><span class="bold">Text Structure</span> Explain that <i>Meet Me at Third and Fairfax</i> has a chronological structure. Say: <span class="blue_scripting">This video shows events in the order in which they happened. The video follows a boy who spends the day at the farmer’s market.</span> Have students watch the first 10 seconds of the video. Ask: <span class="blue_scripting">What is the first thing that happens in the video?</span> (Possible response: The boy invites the viewer to come to the farmer’s market with him.) <span class="blue_scripting">If you were going to make a video about your day today, what would be the first thing that you would show?</span></p>                    
+                    <p>Display a T-chart graphic organizer. At the top of the left column, write “Chronological Structure.” Work with the class to fill in the column with what they know about this structure, and how it helps them understand the writer’s ideas. For example: “tells what happens in order”</p>
+                    <p><span class="bold">Text Features</span> Explain that the video uses both images and audio to take people on a tour of the market. Have students continue to watch the next 10 seconds of the video (from 00:10 to 0:20). Ask: <span class="blue_scripting">Is that the boy talking in this part of the video? This video has a narrator, or someone telling what happens. You might have read stories that have a narrator. Narrators can also be helpful in some videos.</span> Direct students to timecode 00:40 and have them watch 10-20 seconds. Ask: <span class="blue_scripting">What is the narrator telling you? How does it help you understand the video?</span></p>
+                    <p>Return to the T-chart. At the top of the right column write “Narration.” Work with the class to fill in the column with examples of how the narrator helps readers understand the text. For example: “helps make a topic clearer”</p>
+
+                    <h2 id="scrollTop_s5_5">After Reading</h2>
+                    <h3 class="normaltext mb2"><span class="bold uppercase">Vocabulary</span></h3>
+                    <p>After students have read <i>Farmers Market: Meet Me at Third and Fairfax,</i> have them review their completed K-W-L charts. Ask: <span class="blue_scripting">Are there any more words that you would like to add?</span></p>
+                    
+                    <h3 class="normaltext"><span class="bold uppercase">Discuss Across Texts</span></h3>
+                    <p>Encourage students to make connections between <i>Farmers Market: Meet Me at Third and Fairfax</i> and other texts they have read on related subjects.</p>
+                    <ul class="small-bullet">
+                        <li>What texts have you read about farmers markets or other places to shop?</li>
+                        <li>In the <i>Farmers Market</i> video, you learned about farmers who grow crops that they sell. What texts have you read about farmers or other people who grow or make things?</li>
+                        <li>Think about the shirt you read about in <i>How Does Clothing Get to the Store?</i> Do you think the shirt would be sold at a farmers market? Why or why not?</li>
+                    </ul>
+                    <p><span class="bold">Track the Texts</span> After the discussion, have students return to the <a href="javascript:void(0);">Making, Buying, and Selling Things: Track the Texts</a> graphic organizer. Have them fill in the <i><span class="bold">Farmer’s Market: Meet Me at Third and Fairfax</span></i> row with what they learned about markets.</p>
+                    <h3 class="normaltext"><span class="bold uppercase">Discuss The Big Question</span></h3>
+                    <p>Lead a class discussion around this text’s Big Question: <i>Why do things cost what they do?</i> As students share their ideas, draw out more information from them with follow-up questions such as, “Can you say more about that?” or “What are some examples of that?”</p>
+                    <ul class="small-bullet">
+                        <li>How would a shopper find out how much something costs at the farmer’s market?</li>
+                        <li>Who works at a farmer’s market? What kind of work do they do? How do they decide how much the food costs?</li>
+                    </ul>
+                    <button class="blue-button mb20" id="btn-discussiontip">Discussion Tips</button>
+                    <h3 class="normaltext"><span class="bold uppercase">Write About the Big Question</span></h3>
+                    <p>Have students write a brief story (3-4 sentences) about a real or imagined trip to the farmer’s market. Their story should include specific details about what they see, smell, hear, or taste. It should be told in chronological order and should explain what they bought and how much it cost.</p>
+                    <p class="last-p">&nbsp;</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="slide-text5" class="container-fs slide slide-text5 inactive" aria-hidden="true">
+        <div class="banner-bg-small"></div>
+        <div class="container-mxw">
+            <div class="left-side-bar">
+                <div class="side-nav">
+                    <div class="side-nav-circle"></div>
+                    <nav>
+                        <ul role="menu">
+                            <li role="none"><a role="menuitem" refid="scrollTop_s6_1"
+                                    href="#scrollTop_s6_1">Instructional Focus</a></li>
+                            <li role="none"><a role="menuitem" refid="scrollTop_s6_2" href="#scrollTop_s6_2">Summary</a>
+                            </li>
+                            <li role="none"><a role="menuitem" refid="scrollTop_s6_3" href="#scrollTop_s6_3">Before
+                                    Reading</a></li>
+                            <li role="none"><a role="menuitem" refid="scrollTop_s6_4" href="#scrollTop_s6_4">During
+                                    Reading</a></li>
+                            <li role="none"><a role="menuitem" refid="scrollTop_s6_5" href="#scrollTop_s6_5">After
+                                    Reading</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="content-panel">
+                <div class="title-wrap">
+                    <h1 class="title">Shops and Markets Around the World</h1>
+                    <div class="title-bottom-text">
+                        by Sloane Jackson <br>Informational Text - Word Count: 400 &nbsp; Lexile: 570
+                    </div>
+                </div>
+                <div class="text-content">
+                    <h2 id="scrollTop_s6_1">Instructional Focus</h2>
+                    <ul>
+                        <li>
+                            <p><span class="bold">Social Studies Standard</span> Identify prices of products in a local market.</p>
+                        </li>
+                        <li>
+                            <p><span class="bold">Content Objective:</span> Students will understand how merchants display goods and sell them to customers.</p>
+                        </li>
+                        <li>
+                            <p><span class="bold">Language Objective:</span> Students will compare and contrast different places to shop around the world.</p>
+                        </li>
+                        <li>
+                            <p><span class="bold">Text Structure Objective:</span> Students will understand how a compare-and-contrast structure shows how things are similar or different.</p>
+                        </li>
+                        <li>
+                            <p><span class="bold">Text Feature Objective:</span> Students will understand how photographs help them understand the ideas in a text.</p>
+                        </li>
+                    </ul>
+                    <h2 id="scrollTop_s6_2">Summary</h2>
+                    <p>This informational text takes readers on a journey to shops and markets in different countries. Colorful photos show how people buy and sell products around the world.</p>
+                    <h2 id="scrollTop_s6_3">Before Reading</h2>
+                    <h3 class="normaltext"><span class="bold">Big Question</span></h3>
+                    <p>Remind students of the Big Question: <i>Why do things cost what they do?</i> Ask: <span class="blue_scripting">How do you think Shops and Markets Around the World will help you think about the Big Question? What do you think things cost at the shop or market? How do the shop owners decide on prices?</span></p>
+
+                    <h3 class="normaltext"><span class="bold">Preview Vocabulary</span></h3>
+                    <p>Have students find and read sentences in the text that have the words <i><span class="bold">market, sellers, goods,</span></i> and <i><span class="bold">product.</span></i>. Discuss the meaning of each word with the class. Ask <span class="blue_scripting">Have you ever been to a <span class="bold">market</span>? Who were the <span class="bold">sellers</span> at the market? What <span class="bold">goods</span> did they sell? What <span class="bold">product</span> did you want to buy?</span></p>
+                    <h3 class="normaltext"><span class="bold">Oral Vocabulary</h3>
+                    <p><i>Shops and Markets Around the World</i> includes some words that might be new or challenging to students. During class discussions, use these new terms repeatedly to help students become familiar with them. For example: <span class="blue_scripting">If you owned a toy store, how would you <span class="bold">display</span> or show the toys? What would <span class="bold">persuade</span> you to visit a shop, or make you want to go there?</span></p>
+                    <h3 class="normaltext"><span class="bold">K-W-L CHART</span></h3>
+                    <p>Share a K-W-L graphic organizer. Explain that it can help students think about new vocabulary as well as words they already know. Help students to practice using a familiar word, such as shop. Say: <span class="blue_scripting">Do you already know the word <i>shop?</i> Let’s put that word under Know. What about goods? If you are still learning that word, where would you add it to the chart?</span> Before they read, have students fill in the Know column with words about shops and markets that they already know. They can add vocabulary words they wish to know more about under Want. As they read, ask students to add any new words to the Learn column. A completed KWL chart might look like this:</p>
+                    <p>[a three-column chart with columns labeled Know, Want, and Learn. List the following words in each column: <column 1: Know>shop, seller, market <column 2: Want> goods <column 3: Learn> product, display, persuade]</p>
+
+                    <h2 id="scrollTop_s6_4">During Reading</h2>
+                    <h3 class="normaltext"><span class="bold">Elements of Informational Text</span></h3>
+                    <p><span class="bold">Text Structure</span> Explain that  <i>Shops and Markets Around the World</i>  has a compare and contrast structure. Say: <span class="blue_scripting">Sometimes, writers explain how things are the same and different.</span> . Direct students to p. 11 of the text. Point out the word <i>both</i> in the caption. Tell students that some words, such as <i>both</i> and <i>like,</i> show that the author is comparing two things, or telling how they are the same. Other words, such as <i>differ</i> and <i>but,</i> show that the author is contrasting two things by telling how they are different.</p>
+                    <p>Display a T-chart graphic organizer. At the top of the left column, write “Compare-and-Contrast Structure.” Work with the class to fill in the column with what they know about this structure, and how it helps them understand the writer’s ideas. For example: “explains how things are the same and different”</p>
+                    <p><span class="bold">Text Features</span> Say: <span class="blue_scripting">This text has a lot of photos in it. Photos can show how things are the same or different.</span> Point out the photo of a market on p. 4. Ask: <span class="blue_scripting">What does this photo show? What can you buy at this market?</span> Then, direct students’ attention to the photo of a grocery store on p. 6. Ask: <span class="blue_scripting">How is this shop similar to the market in the first photo? How is it different?</span></p>
+                    <p>Return to the T-chart. At the top of the right column write “Photographs.” Work with the class to fill in the column with examples of how the photos help readers understand the text. For example: “help show similarities and differences”</p>
+
+                    <h2 id="scrollTop_s6_5">After Reading</h2>
+                    <h3 class="normaltext"><span class="bold">Vocabulary</span></h3>
+                    <p>After students have read <i>Shops and Markets Around the World,</i> have them review their completed K-W-L charts and share them with a partner. Ask: <span class="blue_scripting">Are there any more words that you would like to add?</span></p>
+                    <p>Display these images from <i>Shops and Markets Around the World</i> to help students think about vocabulary words they may have learned from the text, such as <i>goods, display, product,</i> and <i>customer.</i></p>
+                    <p>[images from the book for the teacher to project: photo from screen 8 (bookstore in Spain) photo from screen 6 (U.S. supermarket) photo from screen 14 (mall in Turkey)]</p>
+                    <p>
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
+                            <div class="card b0">
+                                <div class="card-body img-card">
+                                    <img src="assets/images/screen_s5_afterreading1.jpg">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
+                            <div class="card b0">
+                                <div class="card-body img-card">
+                                    <img src="assets/images/screen_s5_afterreading2.jpg">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
+                            <div class="card b0">
+                                <div class="card-body img-card">
+                                    <img src="assets/images/screen_s5_afterreading3.jpg">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </p>
+                    <h3 class="normaltext"><span class="bold">Discuss Across Texts</span></h3>
+                    <p>Encourage students to make connections between <i>Shops and Markets Around the World</i> and other texts they have read on related subjects.</p>
+                    <ul class="small-bullet">
+                        <li>In <i>Shops and Markets Around the World,</i> we learned that there are many different places to buy and sell things. What else have you read about buying and selling products?</li>
+                        <li>In this text, some merchants grow or make the food they sell. What are some facts you know about farming or making food?</li>
+                        <li>Think about what you read about making and selling clothes in <i>How Does Clothing Get to the Store?</i> Look at the photos in this text. How do these products get to the market?</li>
+                    </ul>
+                    <p><span class="bold">Track the Texts</span> After the discussion, have students return to the <a href="javascript:void(0);">Making, Buying, and Selling Things: Track the Texts</a> graphic organizer. Have them fill in the <i><span class="bold">Shops and Markets Around the World</span></i> row with something they learned about buying and selling products.</p>
+                    <h3 class="normaltext"><span class="bold">Discuss The Big Question</span></h3>
+                    <p>Lead a class discussion around this text’s Big Question: <i>Why do things cost what they do?</i> As students share their ideas, draw out more information with follow-up questions such as, “Can you tell me more about that?” or “What are some examples of that?”</p>
+                    <ul class="small-bullet">
+                        <li>Think about the products in a market. How do you think sellers decide what they will cost?</li>
+                        <li>Why might one product cost more than another product?</li>
+                        <li>Why might a customer decide to shop at a market? How can prices help people decide where to shop?</li>
+                    </ul>
+                    <button class="blue-button mb20">Tips and Tools</button>
+                    <h3 class="normaltext"><span class="bold">Write About the Big Question</span></h3>
+                    <p>Have students imagine opening their own shop. Ask them to write a few sentences describing the shop. Say: <span class="blue_scripting">Think about the places you read about. Where would your shop be? What would you sell, and how much would it cost?</span> Ask students if they would make their own products or sell things that someone else made.</p>
+                    <p class="last-p">&nbsp;</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="slide-after-reading" class="container-fs slide slide-after-reading inactive" aria-hidden="true">
+        <div class="banner-bg-small extrasmall"></div>
+        <div class="container-mxw">
+            <div class="left-side-bar">
+                <div class="side-nav">
+                    <div class="side-nav-circle"></div>
+                    <nav>
+                        <ul role="menu">
+                            <li role="none"><a role="menuitem" refid="scrollTop_s7_1" href="#scrollTop_s7_1">Wrap It
+                                    Up</a></li>
+                            <li role="none"><a role="menuitem" refid="scrollTop_s7_2" href="#scrollTop_s7_2">Vocabulary
+                                    Round-Up</a></li>
+                            <li role="none"><a role="menuitem" refid="scrollTop_s7_3" href="#scrollTop_s7_3">Discuss the
+                                    Text Set's Big Question</a></li>
+                            <li role="none"><a role="menuitem" refid="scrollTop_s7_4" href="#scrollTop_s7_4">Culminating
+                                    Project</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="content-panel">
+                <div class="title-wrap">
+                    <h1 class="title">Grade 2 - Social Studies – Making, Buying, and Selling Things</h1>
+                </div>
+                <div class="text-content">
+                    <h2 id="scrollTop_s7_1">Wrap It Up</h2>
+                    <p>Now that the class has read some or all of the texts in this set, it is time to pull together all the information they have learned from their reading in order to explore and share their evolving understanding of the Big Question.</p>
+                    <h2 id="scrollTop_s7_2">Vocabulary Round-Up</h2>
+                    <p>Have students review all the vocabulary K-W-L charts they completed for these texts. Ask students to look for words that might have started out in the L (learn) or W (want to know) column that later moved to the K (know) column. For example, if they wanted to know more about the word expensive when reading the anchor text, they might have known this word by the time they saw it in <i>Which Bike Would You Pick?</i></p>
+                    <p>Have students identify any words they still have listed as “want to know.” Invite volunteers to share their “want to know” words aloud, and ask other volunteers if they can explain or define the words. Model using reference materials to look up unknown words.</p>
+                    <h2 id="scrollTop_s7_3">Discuss the Text Set's Big Question</h2>
+                    <p>Guide a class discussion around the Big Question: <i>Why do things cost what they do?</i> Encourage students to bring in knowledge they have learned from all the texts they have read in the text set, using as many of the vocabulary words as they can.</p>
+                    <ul class="small-bullet">
+                        <li>You’ve read a lot of books about making, buying, and selling products. What did you already know about this topic before you began reading this text set?</li>
+                        <li>What did you learn about why things cost what they do?</li>
+                        <li>What else would you like to learn about making, buying, and selling products?</li>
+                        <li>Which texts were the most helpful in answering the Big Question? Why?</li>
+                    </ul>
+                    <button class="blue-button mb20" id="btn-discussiontip">Discussion Tips</button>
+                    <h2 id="scrollTop_s7_4">Culminating Project</h2>
+                    <p>Have students apply what they’ve learned from the text set to demonstrate and enhance their understanding.</p>
+                    <h3 class="normaltext"><span class="bold">Create a Product Plan</span></h3>
+                    <p>Have students write and draw a step-by-step plan for making and selling a product at a school craft fair. Ask them to think about the materials they need and how they will design the product. Remind them of the steps involved in selling the product, including setting a price. If you wish, you can extend the activity by organizing a class Market Day in which students make products they designed and “sell” them using play currency.</p>
+                    <p>Use the Project Rubric <a href="javascript:void(0);">to evaluate student work.</a></p>
+                    <p>Students can refer to what they wrote in Write About the Big Question for each text to aid their thinking and planning. They may also use the <a href="javascript:void(0);" class="activitySupport" popupref="popup-ar-31">Project Template</a> to help them organize and clarify their thinking as they plan their projects. Encourage them to use the vocabulary they’ve learned from the texts in their plan.</p>
+                    <p class="last-p">&nbsp;</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fs-popup disclaimer disnone" aria-hidden="true">
+        <div class="row popup-main-row">
+            <div class="col-2 popup-concave-col" aria-hidden="true">
+            </div>
+            <div class="col-10 popup-content-col">
+                <div class="popup-content-scroller">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12">
+                            <h2 tabindex="-1" class="popup-content-title">Disclaimer</h2>
+                            <p>
+                                By clicking the highlighted text, you will be leaving the Savvas NOW Program to enter
+                                into an
+                                external website that may contain content or resources for adults. Savvas does not
+                                guarantee, approve or
+                                endorse the content, resources or products available at these websites, nor does a link
+                                indicate any
+                                association with or endorsement by the linked website to Savvas Learning Company LLC.
+                                The linked website
+                                has its own legal terms and policies, including a privacy policy and community
+                                guidelines. We recommend
+                                that you review any terms of use and all policies and guidelines of such websites before
+                                supplying
+                                information to or otherwise using those websites or their products and services. We at
+                                Savvas Learning
+                                Company LLC do not control these third party websites and are not responsible or liable
+                                for the
+                                performance of these websites, their services or any of the content and resources
+                                contained on them.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button  id="disclaimerClose" aria-label="Close" class="popup-close-btn"><i class="far fa-times-circle"></i></button>
+    </div>
+    <div class="container-fs-popup activitySupport popup-ar-31  disnone " aria-hidden="true">
+        <div class="row popup-main-row">
+            <div class="col-2 popup-concave-col" aria-hidden="true">
+            </div>
+            <div class="col-10 popup-content-col">
+                <div class="popup-content-scroller">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-12 col-sm-12">
+                            <h2 tabindex="-1" class="popup-left-title">Project Template</h2>
+                        </div>
+                        <div class="col-lg-8 col-md-12 col-sm-12">
+                            <div class="tableWrapper ptemplate">
+                                <table class="table table-bordered tableProjTemp">
+                                    <thead>
+                                        <tr>
+                                            <th style="width: 30%;">Name:</th>
+                                            <th style="width: 30%;">Book Title:</th>
+                                            <th style="width: 30%;">Big Question:</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td colspan="3">
+                                                <p><span class="bold">Project Description:</span></p>
+                                                <p>
+                                                    <hr>
+                                                </p>
+                                                <p>
+                                                    <hr>
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="1">
+                                                <p><span class="bold">Resources:</span></p>
+                                                <p>List the resources you used to complete your project.</p>
+                                            </td>
+                                            <td colspan="2">
+                                                <ul class="small-bullet">
+                                                    <li></li>
+                                                    <li></li>
+                                                    <li></li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="1">
+                                                <p><span class="bold">Big Question Connection:</span></p>
+                                                <p>Write two to three sentences explaining how your project addresses
+                                                    the
+                                                    Big
+                                                    Question.
+                                                </p>
+                                            </td>
+                                            <td colspan="2">
+                                                <p>
+                                                    <hr>
+                                                </p>
+                                                <p>
+                                                    <hr>
+                                                </p>
+                                                <p>
+                                                    <hr>
+                                                </p>
+                                                <p>
+                                                    <hr>
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="1" style="border-bottom: 0;">
+                                                <p><span class="bold">Reflection:</span></p>
+                                                <p>Think about the book’s characters, setting, and plot. How was this
+                                                    book a
+                                                    mirror for
+                                                    you? How was it a window?</p>
+
+                                            </td>
+                                            <td colspan="2" style="border-bottom: 0;">
+                                                <p>This text was a mirror for me because ...</p>
+                                                <p>
+                                                    <hr>
+                                                </p>
+                                                <p>
+                                                    <hr>
+                                                </p>
+                                                <p>This text was a window for me because ...</p>
+                                                <p>
+                                                    <hr>
+                                                </p>
+                                                <p>
+                                                    <hr>
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="1" style="border-top: 0;">
+                                                <p>How might your project be a mirror or a window for others?</p>
+                                            </td>
+                                            <td colspan="2" style="border-top: 0;">
+                                                <p>My project might be a <span class="sr-only">fill in the blank
+                                                        lines</span>_________ (mirror/window) for others because...</p>
+                                                <p>
+                                                    <hr>
+                                                </p>
+                                                <p>
+                                                    <hr>
+                                                </p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="ac-popup-close-btn" aria-label="Close"><i class="far fa-times-circle" aria-hidden="true"></i></button>
+    </div>
+    <div class="container-fs-popup activitySupport popup-ar-32  disnone " aria-hidden="true">
+        <div class="row popup-main-row">
+            <div class="col-2 popup-concave-col" aria-hidden="true">
+            </div>
+            <div class="col-10 popup-content-col">
+                <div class="popup-content-scroller">
+                    <h2 tabindex="-1" class="popup-left-title leftalig-nmt0">Project Rubric</h2>
+                    <table class="table table-bordered table-ar-32">
+                        <caption style="caption-side:top;">4-Point research Project Rubric</caption>
+                        <thead>
+                            <tr>
+                                <th>Score</th>
+                                <th>Focus</th>
+                                <th>Organization</th>
+                                <th>Visuals/Media</th>
+                                <th>Language</th>
+                                <th>Delivery</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>4</td>
+                                <td>The topic is clear, convincing, and effectively addresses the Big Question</td>
+                                <td>Ideas are clear and well organized.</td>
+                                <td>Visuals/media are engaging, appealing, and effectively support ideas presented.</td>
+                                <td>Language is clear and precise. Vocabulary is specific and appropriate.</td>
+                                <td>Presenter employs appropriate eye contact, speaking rate, and enunciation.</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>The topic is mostly clear and sufficiently addresses the Big Question.</td>
+                                <td>Ideas are mostly clear and well organized. </td>
+                                <td>Visuals/media are mostly engaging, appealing, and support ideas presented. </td>
+                                <td>Language is mostly clear and includes appropriate vocabulary. </td>
+                                <td>Presenter employs mostly appropriate eye contact, speaking rate, and enunciation.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>The topic is <u>not</u> always clear and only partially addresses the Big Question.
+                                </td>
+                                <td>Ideas are sometimes confusing and <u>not</u> well organized.</td>
+                                <td>Visuals/media are not always engaging and only partially support ideas presented.
+                                </td>
+                                <td>Language is often vague and/or unclear. Vocabulary is overly general. </td>
+                                <td>Eye contact, speaking rate, and enunciation are uneven.</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>The topic is confusing and unrelated to the Big Question.</td>
+                                <td>Ideas are confusing and unorganized.</td>
+                                <td>Visuals/media are <u>not</u> engaging and/or do <u>not</u> support ideas presented.
+                                </td>
+                                <td>Language is vague and unclear. Vocabulary may be used incorrectly.</td>
+                                <td>There is little command of presentation skills. </td>
+                            </tr>
+                            <tr>
+                                <td>0</td>
+                                <td>Response is unintelligible, illegible, and off topic or no response is given.</td>
+                                <td>Response is unintelligible, illegible, and off topic or no response is given.</td>
+                                <td>Visuals/media are unintelligible, illegible, and off topic or not included.</td>
+                                <td>Response is unintelligible, illegible, and off topic or no response is given.</td>
+                                <td>Presentation is unintelligible, off topic, or not delivered.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <button class="ac-popup-close-btn" aria-label="Close"><i class="far fa-times-circle"></i></button>
+    </div>
+    <div class="container-fs-popup discussiontip disnone" aria-hidden="true">
+        <div class="row popup-main-row">
+            <div class="col-2 popup-concave-col" aria-hidden="true">
+            </div>
+            <div class="col-10 popup-content-col">
+                <div class="popup-content-scroller">
+                    <h2 tabindex="-1" class="popup-content-title">Discussion Tips</h2>
+                    <p>An important part of building a vibrant classroom culture is creating an atmosphere in which all
+                        students feel empowered to participate in powerful classroom conversation. You may have noticed
+                        that
+                        your students who are naturally extroverted often participate freely in a whole-class
+                        discussion,
+                        while those who are more introverted or, perhaps, who come from cultures that respect different
+                        classroom norms, may need encouragement to share. You can use sentence prompts like these to
+                        invite
+                        all students into the conversation:</p>
+                    <p>“That’s so interesting … please tell me more!”</p>
+                    <p>“Can someone explain that in a different way?”</p>
+                    <p>“What are some examples of that?”</p>
+                    <p>“Can someone add on to that idea?”</p>
+                    <p>Sharing and discussing ideas will often involve agreeing and/or disagreeing with what others say.
+                        As
+                        students listen carefully and respond thoughtfully to their classmates’ ideas, encourage them to
+                        express themselves in respectful and constructive ways. You may wish to post these sentence
+                        starters
+                        prominently, so students can refer to them often:</p>
+                    <p>“I agree, and I also think <span class="sr-only">fill in the blank line</span><span
+                            class="solidl">__________</span> .”</p>
+                    <p>“I mostly agree, but <span class="sr-only">fill in the blank line</span><span
+                            class="solidl">__________</span> .”</p>
+                    <p>“I like what you just said because <span class="sr-only">fill in the blank line</span><span
+                            class="solidl">__________</span> .”</p>
+                    <p>“I respectfully disagree because <span class="sr-only">fill in the blank line</span><span
+                            class="solidl">__________</span> .”</p>
+                    <p>For more tips and guidance on classroom discussions, see these helpful resources.</p>
+                    <p>Chapin, Suzanne H., O'Connor, Catherine, and Canavan Anderson, Nancy (2009). Talk Moves.
+                        <br><a target="_blank"
+                            href="https://www.edutopia.org/sites/default/files/2019-11/Talk_Moves_2_UP.pdf">https://www.edutopia.org/sites/default/files/2019-11/Talk_Moves_2_UP.pdf</a>
+                    </p>
+                    <p>O’Conner, Cathy (2021). Information and Resources: Discussion and Debate in the Classroom. <br>
+                        To find this site, copy and paste this URL into your browser:
+                        https://www.serpinstitute.org/wordgen-elementary/discussion-and-debate
+                    </p>
+                    <p>Toro, Stephanie (2021). How to Engage More Students in Classroom Discussions. <br><a
+                            target="_blank"
+                            href="https://www.edutopia.org/article/how-engage-more-students-classroom-discussions">https://www.edutopia.org/article/how-engage-more-students-classroom-discussions</a>
+                    </p>
+                    <p>Zwiers, Jeff (2020). Enhancing learning with authentic communication.
+                        <br>To find this site, copy and paste this URL into your browser: https://Jeffzwiers.org
+                    </p>
+                </div>
+            </div>
+        </div>
+        <button id="discussiontipClose" class="popup-close-btn" aria-label="Close"><i class="far fa-times-circle"></i></button>
+    </div>
+
+    <div class="container-fs-popup fullmoon disnone" aria-hidden="true">
+        <div class="row popup-main-row">
+            <div class="col-12 popup-content-col" style="text-align: center;">
+                <img class="popupimage-large" src="assets/images/download1.png" alt="Name the Full Moons">
+            </div>
+        </div>
+        <div class="hiddenarea">
+        <button id="fullmoonClose" aria-label="Close"  class="popup-close-btn"><i class="far fa-times-circle"></i></button>
+        </div>
+            
+    <div id="selectedMenuText" class="sr-only">Selected </div>
+    <div class="sr-only" role="region" id="livecontent" aria-live="polite"></div>
+    <script src="assets/js/utility.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
 </html>
