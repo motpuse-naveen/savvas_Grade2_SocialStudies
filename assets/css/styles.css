@@ -183,7 +183,7 @@ body, html {
 
 .side-nav {
     width: 100%;
-    height: 290px;
+    min-height: 290px;
 }
 
 .side-nav-circle {
@@ -191,7 +191,7 @@ body, html {
     background-color: #919E57;
     border-radius: 50%;
     width: 313px;
-    height: 313px;
+    height: 320px;
     left: -112px;
     top: -27px;
     z-index: -1;
@@ -206,7 +206,7 @@ body, html {
     font-family: 'poppins-regular';
     font-size: 15px;
     color: #03030280;
-    padding: 6px 60px;
+    padding: 6px 35px;
     padding-left: 0px;
     line-height: 1.3em;
 }
@@ -290,6 +290,7 @@ body, html {
 .card-wrap.row {
     margin-right: 0px;
     margin-left: 0px;
+    padding-bottom: 10px;
 }
 
 .card-wrap.row .col {
@@ -343,9 +344,14 @@ body, html {
 }
 
 .card-cover-img {
-    height: 206px;
     border-top-left-radius: 9px;
     border-top-right-radius: 9px;
+}
+.card-cover-img.FixHeight{
+    height: 206px;
+}
+.card-cover-img.MinHeight{
+    min-height: 206px;
 }
 
 .card-cover-img.img1 {
@@ -390,13 +396,12 @@ body, html {
 .card-back {
     background-color: #FFFFFF;
     padding: 10px;
-    font-size: 11px;
+    font-size: 10px;
     font-family: 'poppins-regular';
     border-top-left-radius: 9px;
     border-top-right-radius: 9px;
     opacity: 0.95;
-    height: 100%;
-    line-height: 13.6px;
+    min-height: 206px;
     display: none;
 }
 
@@ -497,7 +502,7 @@ body, html {
 }
 
 h3.normaltext{
-    font-size: 16px;
+    font-size: 16px !important;
     margin-left: 5px;
     margin-right: 5px;
 }
@@ -642,7 +647,7 @@ table.table-style2 .trbg {
 .text-content figure.right-image{
     width: 208px;
     margin: 0;
-    margin-top: -156px;
+    margin-top: -115px;
 
 }
 .text-content figure.right-image img{
@@ -780,9 +785,9 @@ a.graylink{
 }
 .popup-left-title{
     font-family: 'poppins-semibold';
-    color: #597CBE91;
+    color: #486FB1;
     font-size: 66px;
-    line-height: 66px;
+    line-height: 1.5;
     margin-top: 6rem;
     text-align: center;
 }
@@ -927,7 +932,7 @@ a.graylink{
     width: 24px;
     height: 24px;
     border-style: none;
-    z-index: 99;
+    z-index: 90;
     border: 1px solid #000;
     border-radius:50%;
     display: none;
