@@ -170,9 +170,10 @@ body, html {
 .banner-bg-small.extrasmall{
     height: 120px;
 }
-#slide-text2 .banner-bg-small {
-    height: 210px;
+.slide-text4 .banner-bg-small, .slide-text5 .banner-bg-small, .slide-after-reading .banner-bg-small{
+    height: 205px;
 }
+
 .left-side-bar {
     width: 202px;
     position: fixed;
@@ -348,10 +349,10 @@ body, html {
     border-top-right-radius: 9px;
 }
 .card-cover-img.FixHeight{
-    height: 206px;
+    height: 248px;
 }
 .card-cover-img.MinHeight{
-    min-height: 206px;
+    min-height: 248px;
 }
 
 .card-cover-img.img1 {
@@ -362,12 +363,8 @@ body, html {
 
 .card-cover-img.img2 {
     background: url(../images/img2.jpg);
-    /*background-size: cover;*/
+    background-size: cover;
     background-repeat: no-repeat;
-        background-size: 367% 120%;
-    background-repeat: no-repeat;
-    /*background-position: -232px 0px;*/
-        background-position: -207px 0px;
 }
 
 .card-cover-img.img3 {
@@ -401,7 +398,7 @@ body, html {
     border-top-left-radius: 9px;
     border-top-right-radius: 9px;
     opacity: 0.95;
-    min-height: 206px;
+    min-height: 248px;
     display: none;
 }
 
@@ -1155,7 +1152,7 @@ a.graylink{
   }
   @-webkit-keyframes textSlideTop{
     from {
-        margin-top: 206px;
+        margin-top: 248px;
     }
   
     to {
@@ -1170,12 +1167,12 @@ a.graylink{
   
     to {
       /* left: auto; */
-      height: 206px;
+      height: 248px;
     }
   }
   @-webkit-keyframes cardSlide{
     from {
-        margin-top: 206px;
+        margin-top: 248px;
     }
   
     to {
