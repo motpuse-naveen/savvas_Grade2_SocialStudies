@@ -171,7 +171,7 @@ body, html {
     height: 120px;
 }
 .slide-text4 .banner-bg-small, .slide-text5 .banner-bg-small, .slide-after-reading .banner-bg-small{
-    height: 205px;
+    height: 150px;
 }
 
 .left-side-bar {
@@ -270,7 +270,7 @@ body, html {
 }
 
 .content-panel .title-wrap .title {
-    font-size: 42px;
+    font-size: 40px;
     font-family: 'poppins-semibold';
     color: #FFFFFF;
     /*margin-bottom: 0;
@@ -443,6 +443,7 @@ body, html {
     cursor: pointer;
     border-style: none;
     background: transparent;
+	outline:none !important;
 }
 
 .container-fs-popup .topMenuBar1 {
