@@ -1189,5 +1189,7 @@ a.graylink{
       height: 70px;
     }
   }
+  
+  .bold_active{font-size:16px; font-family: "poppins-bold";}
 
 /**/
