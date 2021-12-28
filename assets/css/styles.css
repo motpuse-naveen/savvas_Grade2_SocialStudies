@@ -967,6 +967,9 @@ a.graylink{
 .CarouselDots .dot.active {
     background-color: #999999;
 }
+.textblkCol{
+    color: #000000 !important;
+}
 /*Annimation*/
 .annim1{
     animation: floatText 2s normal;
