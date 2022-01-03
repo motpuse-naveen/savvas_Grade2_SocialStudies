@@ -347,10 +347,15 @@ body, html {
     border-top-right-radius: 9px;
 }
 .card-cover-img.FixHeight{
-    height: 248px;
+    height: 232px;
 }
 .card-cover-img.MinHeight{
     min-height: 232px;
+}
+.cardmarginTop{
+    position: relative;
+    margin-top: 232px;
+    display: none;
 }
 
 .card-cover-img.img1 {
@@ -1191,7 +1196,7 @@ table.kwlchart tbody tr td:last-child {
   }
   @-webkit-keyframes textSlideTop{
     from {
-        margin-top: 248px;
+        margin-top: 232px;
     }
   
     to {
@@ -1206,12 +1211,12 @@ table.kwlchart tbody tr td:last-child {
   
     to {
       /* left: auto; */
-      height: 248px;
+      height: 232px;
     }
   }
   @-webkit-keyframes cardSlide{
     from {
-        margin-top: 248px;
+        margin-top: 232px;
     }
   
     to {
