@@ -791,6 +791,8 @@ a.graylink{
     line-height: 1;
     /* margin-top: 6rem; */
     text-align: center;
+        letter-spacing: -2.6px;
+
 }
 .popup-content-title{
     font-family: 'poppins-semibold';
