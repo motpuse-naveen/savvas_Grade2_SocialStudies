@@ -1276,4 +1276,9 @@ table.kwlchart tbody tr td:last-child {
   
   .bold_active{font-size:16px; font-family: "poppins-bold";}
 
+  .rubric-caption{
+    caption-side:top;
+    margin-top: 30px;
+  }
+
 /**/
